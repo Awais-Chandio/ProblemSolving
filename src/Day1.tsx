@@ -4,11 +4,9 @@ import { View, Text,StyleSheet,Pressable, TextInput } from "react-native"
 export default function Day1(){
     const[input,setInput] = React.useState('')
     const[output,setOutput] = React.useState<number | string>('')
-    const StringToNumber = (value:string) => {
-        return Number(value)
-    }
+   
     const Convert = () => {
-        const number = StringToNumber(input)
+        const number = Number(input)
         setOutput(number)
     }
 
