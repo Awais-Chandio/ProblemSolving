@@ -1,24 +1,33 @@
 import React from "react"
-import { View, Text,StyleSheet,Pressable } from "react-native"
+import { View, Text,StyleSheet,Pressable, TextInput } from "react-native"
 
 export default function Day1(){
-    const Task1 =()=>{
-        const array = [1,2,3,4,5,6,7,8,9,10]
-        let evenDouble = []
-        for(let i=0; i<array.length; i++){
-            if(array[i]%2===0){
-                evenDouble.push(array[i]*2)
-            }
-        }
-        console.log(evenDouble)
-
+    const[input,setInput] = React.useState('')
+    const[output,setOutput] = React.useState<number | string>('')
+    const StringToNumber = (value:string) => {
+        return Number(value)
+    }
+    const Convert = () => {
+        const number = StringToNumber(input)
+        setOutput(number)
     }
 
-    
     return (
         <View style={Styles.container}>
-            <Pressable onPress={Task1}>
-                <Text>CLick here for task 1</Text>
+            <Text>Day1</Text>
+            <TextInput
+            value = {input}
+            onChangeText = {setInput}
+            placeholder = "Enter a String"
+            >
+
+
+            </TextInput>
+            <Pressable
+            onPress = {Convert}
+            >
+                <Text>Convert</Text>
+
             </Pressable>
         </View>
     )
