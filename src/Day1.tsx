@@ -29,6 +29,9 @@ export default function Day1(){
                 <Text>Convert</Text>
 
             </Pressable>
+            <Text>{output}</Text>
+            <Text>{typeof output}</Text>
+
         </View>
     )
 };
