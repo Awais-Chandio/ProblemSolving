@@ -39,13 +39,15 @@ export default function Day2(){
            onChangeText = {setInput}
            placeholder = "Enter a Number"
            keyboardType = "numeric"
-           >
+           />
             <Pressable onPress={handledigitalize}>
                 <Text>Convert</Text>
             </Pressable>
-            <Text>{outout}</Text>
+            <Text>{Array.isArray(outout) ? outout.join(', ') : outout}</Text>
+            <Text>{JSON.stringify(outout)}</Text>
 
-           </TextInput>
+
+
 
         </View>
     )
