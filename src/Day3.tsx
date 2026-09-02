@@ -6,7 +6,9 @@ let inputYear = Math.floor(year/100)
 if(year%100!==0){
     inputYear = inputYear+1;
 }
-return inputYear
+return inputYear  
+
+
 
 }
 export default function Day3(){
