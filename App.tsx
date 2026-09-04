@@ -6,6 +6,7 @@ import HomeScreen from './src/HomeScreen'
 import Day1 from './src/Day1'
 import Day2 from './src/Day2';
 import Day3 from './src/Day3';
+import Day4 from './src/Day4';
 
 const Stack = createStackNavigator();
 
