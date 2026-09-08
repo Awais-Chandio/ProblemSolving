@@ -8,6 +8,7 @@ import Day2 from './src/Day2';
 import Day3 from './src/Day3';
 import Day4 from './src/Day4';
 import Day5 from './src/Day5';
+import Day6 from './src/Day6';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ export default function App() {
                 <Stack.Screen name="Day3" component={Day3} />
                 <Stack.Screen name="Day4" component={Day4} />
                 <Stack.Screen name="Day5" component={Day5} />
+                <Stack.Screen name='Day6' component={Day6} />
             </Stack.Navigator>
         </NavigationContainer>
     )
