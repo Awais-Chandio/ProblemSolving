@@ -5,8 +5,8 @@ export default function HomeScreen({ navigation }: any) {
     return (
         <View style={Styles.container}>
             <Text>HomeScreen</Text>
-            <Pressable onPress={() => navigation.navigate("Day5")}>
-                <Text>Day 5</Text>
+            <Pressable onPress={() => navigation.navigate("Day6")}>
+                <Text>Day 6</Text>
             </Pressable>
         </View>
     )
