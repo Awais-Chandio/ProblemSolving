@@ -1,21 +1,19 @@
+/*
+Solved From LEET CODE
+Given a positive integer millis, write an asynchronous function that sleeps for millis milliseconds. It can resolve any value.
 
-//standard function or function declaration 
-//function declaration is hoisted 
-console.log(sum(2,4))
-function sum(a,b){
-return a+b
+Note that minor deviation from millis in the actual sleep duration is acceptable.
+
+*/
+
+
+async function sleep(millis) {
+   return new Promise((resolve,reject)=>{
+      return setTimeout(resolve,millis)
+   })
+   
 }
 
-
-//function expression is not hoisted, arrow function is the shorter syntax for it 
-console.log(product(3,3))
- const product = (a,b)=>{
-    return a*b
-
- }
-
-
-
-
-
-
+console.log(sleep(100))
+let t = Date.now();
+sleep(100).then(() => console.log(Date.now() - t));
