@@ -9,6 +9,6 @@
     "noEmit": true,
     "isolatedModules": true
   },
-  "include": ["**/*.ts", "**/*.tsx", "src/Day7.js"],
+  "include": ["**/*.ts", "**/*.tsx", "src/Day7.js", "src/Day10.js"],
   "exclude": ["**/node_modules", "**/Pods"]
 }
