@@ -20,3 +20,20 @@ for(let i=0; i<employees.length; i++){
   return HighSalary
 }
 console.log("HighestSalary is "+HighestSalary(employees))
+
+
+
+
+// Write a function that takes an array of employee objects and returns the lowest salary among them.
+
+const LowestSalary = (employees)=>{
+let LowestSalary = employees[0].salary;
+for(let i=0; i<employees.length; i++){
+  if(employees[i].salary<LowestSalary){
+    LowestSalary = employees[i].salary
+    
+  }
+}
+  return LowestSalary
+}
+console.log("LowestSalary is "+LowestSalary(employees))
