@@ -16,5 +16,11 @@ console.log("Employees with salary between 40000 and 70000 are "+(SalaryRange))
 
 
 
+// Write a function that takes an array of employee objects and returns the names of employees with salary greater than 50000.
 const IncreaseSalary = employees.map((employee)=>({name:employee.name, salary:employee.salary+5000}))
-console.log(IncreaseSalary)
+console.log("Employees with increased salary are: ", IncreaseSalary)
+
+
+//Return names of the employees with uppercase names
+const UpperCaseNames = employees.map((employee)=>employee.name.toUpperCase())
+console.log("Employees with uppercase names are: ", UpperCaseNames)
