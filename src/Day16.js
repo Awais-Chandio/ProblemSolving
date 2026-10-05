@@ -24,3 +24,7 @@ console.log("Employees with increased salary are: ", IncreaseSalary)
 //Return names of the employees with uppercase names
 const UpperCaseNames = employees.map((employee)=>employee.name.toUpperCase())
 console.log("Employees with uppercase names are: ", UpperCaseNames)
+
+//Return the total salary of all employees
+const TotalSalary = employees.reduce((total,employee)=>total+employee.salary,0)
+console.log("Total salary of all employees is: ", TotalSalary)
