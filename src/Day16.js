@@ -28,3 +28,6 @@ console.log("Employees with uppercase names are: ", UpperCaseNames)
 //Return the total salary of all employees
 const TotalSalary = employees.reduce((total,employee)=>total+employee.salary,0)
 console.log("Total salary of all employees is: ", TotalSalary)
+
+const TotalSalaryIT = employees.filter((employee)=>employee.department=="IT").reduce((total,employee)=>total+employee.salary,0)
+console.log("Total salary of IT employees is: ", TotalSalaryIT)
