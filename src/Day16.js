@@ -29,5 +29,12 @@ console.log("Employees with uppercase names are: ", UpperCaseNames)
 const TotalSalary = employees.reduce((total,employee)=>total+employee.salary,0)
 console.log("Total salary of all employees is: ", TotalSalary)
 
+//Return the total salary of employees in the IT department
 const TotalSalaryIT = employees.filter((employee)=>employee.department=="IT").reduce((total,employee)=>total+employee.salary,0)
 console.log("Total salary of IT employees is: ", TotalSalaryIT)
+
+const HRDepartment = employees.filter((employee)=>employee.department=="HR")
+console.log("Employees in HR department are: ", HRDepartment)
+
+const HRAvgSalary = HRDepartment.reduce((total,employee)=>total+employee.salary,0)/HRDepartment.length
+console.log("Average salary of HR employees is: ", HRAvgSalary)
