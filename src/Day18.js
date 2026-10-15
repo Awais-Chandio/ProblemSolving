@@ -1,3 +1,4 @@
+//Calculate the total salary of employees based on their department
 const employees = [
     { id: 1, name: "Ali", department: "IT", salary: 60000 },
     { id: 2, name: "Ahmed", department: "HR", salary: 45000 },
