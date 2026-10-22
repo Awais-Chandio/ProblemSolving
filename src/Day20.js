@@ -19,3 +19,16 @@ console.log(resultForSome)
 //find if all employees have salary greater than 100000
 const resultEvery = employees.every((emp) => emp.salary > 100000)
 console.log(resultEvery)
+
+//find the employees with salary greater than 50000
+const FilterSalary = employees.filter((emp) => emp.salary > 10000).map(emp => emp.salary)
+console.log(FilterSalary)
+
+//find the employees with salary greater than 50000 and sort them
+const SortArray = FilterSalary.sort((a, b) => b - a)
+console.log(SortArray)
+
+
+//reduce the array to a single value
+const ReduceArray = FilterSalary.reduce((a, b) => a + b)
+console.log(ReduceArray)
