@@ -15,3 +15,7 @@ console.log(result)
 //find if any employee have salary greater than 80000
 const resultForSome = employees.some((emp) => emp.salary > 80000)
 console.log(resultForSome)
+
+//find if all employees have salary greater than 100000
+const resultEvery = employees.every((emp) => emp.salary > 100000)
+console.log(resultEvery)
