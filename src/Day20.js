@@ -7,5 +7,11 @@ const employees = [
     { id: 6, name: "Hamza", department: "HR", salary: 35000 }
 ];
 
+//find the employee with id 4 with the find methode
 const result = employees.find((emp) => emp.id == 4)
 console.log(result)
+
+
+//find if any employee have salary greater than 80000
+const resultForSome = employees.some((emp) => emp.salary > 80000)
+console.log(resultForSome)
