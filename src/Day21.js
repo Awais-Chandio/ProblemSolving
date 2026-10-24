@@ -15,3 +15,22 @@ getProduct().then((data) => {
 }).catch((error) => {
     console.log(error)
 })
+
+
+
+//Voting(age) naam ka function banao jo ek Promise se voting ki eligibility check kare aur result print kare.
+function Voting(age) {
+    return new Promise((resolve, reject) => {
+        if (age >= 18) {
+            resolve("You are eligible for voting")
+        } else {
+            reject("You are not eligible for voting")
+        }
+    })
+}
+
+Voting(19).then((data) => {
+    console.log(data)
+}).catch((error) => {
+    console.log(error)
+})
