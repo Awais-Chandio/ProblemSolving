@@ -35,3 +35,23 @@ Voting(19).then((data) => {
     console.log(error)
 })
 
+
+async function PaymentCheck(amount) {
+    const status = await new Promise((resolve, reject) => {
+        if (amount >= 1000) {
+            resolve("Payment Done")
+        }
+        else {
+            reject("Insufficient Balance")
+        }
+    })
+
+    return status
+}
+
+PaymentCheck(5000).then((data) => {
+    console.log(data)
+}).catch((error) => {
+    console.log(error)
+})
+
